@@ -1,4 +1,4 @@
-name: first workflow
+name: action workflow
 
 on: 
   workflow_dispatch:
