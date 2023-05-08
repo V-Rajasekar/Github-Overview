@@ -19,7 +19,7 @@ jobs:
          who-to-greet: 'Mona the Octocat'
       - name: time
         run: |
-          echo "The time of the greeting was at: ${{ steps.greetings.output.time}}"
+          echo "The time of the greeting was at: ${{ steps.greetingsId.output.time}}"
     
   secondJob:
       runs-on: ubuntu-latest
