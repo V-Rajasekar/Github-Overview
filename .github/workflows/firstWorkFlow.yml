@@ -13,10 +13,10 @@ jobs:
     
     secondJob:
       runs-on: ubuntu-latest
-    steps:
-      - name: secondJob script
-        shell: bash
-        run: |
-           echo this is the second
-           hurray!
+      steps:
+        - name: secondJob script
+          shell: bash
+          run: |
+             echo this is the second
+             hurray!
   
