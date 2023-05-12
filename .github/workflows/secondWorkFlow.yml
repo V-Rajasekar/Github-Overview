@@ -7,7 +7,7 @@ jobs:
   firstjob:
     runs-on: ubuntu-latest
     steps:
-      - name: firstJob script
+      - name: HelloWorld
         shell: bash
         run: echo Hello World! This is the first job
       - name: checkout
@@ -19,10 +19,11 @@ jobs:
           who-to-greet: 'Mona the Octocat'
       - name: time
         run: |
-               echo "The time of the greeting was at: ${{steps.greetings.outputs.time}}"
+            echo "The time of the greeting was at: ${{ steps.greetings.outputs.time }}"
     
   secondJob:
       runs-on: ubuntu-latest
+      needs: firstjob
       steps:
         - name: secondJob script
           shell: bash
